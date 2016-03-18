@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="markdown,hexo," />
+  <meta name="keywords" content="数据结构与算法," />
 
 
 
@@ -45,21 +45,19 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="什么是MarkdowwnMarkdown 是一种轻量级标记语言，创始人为约翰·格鲁伯和亚伦·斯沃茨。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML文档”。 ——维基百科
-hexo是使用Markdown编辑文章的。">
+<meta name="description" content="回文是一种字符串或数，它正着读和反着读是一样的,例如12121、level.
+问题：Determine whether an integer is a palindrome.（判断一个正整数是否为回文数）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown 简明语法">
-<meta property="og:url" content="http://YapingZhou.github.io/2016/03/13/markdown-简明语法/index.html">
+<meta property="og:title" content="判断回文的几种方法">
+<meta property="og:url" content="http://YapingZhou.github.io/2016/03/18/判断回文的几种方法/index.html">
 <meta property="og:site_name" content="亚平的小天地">
-<meta property="og:description" content="什么是MarkdowwnMarkdown 是一种轻量级标记语言，创始人为约翰·格鲁伯和亚伦·斯沃茨。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML文档”。 ——维基百科
-hexo是使用Markdown编辑文章的。">
-<meta property="og:image" content="http://YapingZhou.github.io/url">
-<meta property="og:updated_time" content="2016-03-16T03:16:01.694Z">
+<meta property="og:description" content="回文是一种字符串或数，它正着读和反着读是一样的,例如12121、level.
+问题：Determine whether an integer is a palindrome.（判断一个正整数是否为回文数）">
+<meta property="og:updated_time" content="2016-03-18T13:16:21.472Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="markdown 简明语法">
-<meta name="twitter:description" content="什么是MarkdowwnMarkdown 是一种轻量级标记语言，创始人为约翰·格鲁伯和亚伦·斯沃茨。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML文档”。 ——维基百科
-hexo是使用Markdown编辑文章的。">
-<meta name="twitter:image" content="http://YapingZhou.github.io/url">
+<meta name="twitter:title" content="判断回文的几种方法">
+<meta name="twitter:description" content="回文是一种字符串或数，它正着读和反着读是一样的,例如12121、level.
+问题：Determine whether an integer is a palindrome.（判断一个正整数是否为回文数）">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -71,7 +69,7 @@ hexo是使用Markdown编辑文章的。">
 
 
 
-  <title> markdown 简明语法 | 亚平的小天地 </title>
+  <title> 判断回文的几种方法 | 亚平的小天地 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -216,7 +214,7 @@ hexo是使用Markdown编辑文章的。">
             
             
               
-                markdown 简明语法
+                判断回文的几种方法
               
             
           </h1>
@@ -225,8 +223,8 @@ hexo是使用Markdown编辑文章的。">
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-03-13T20:41:59+08:00" content="2016-03-13">
-              2016-03-13
+            <time itemprop="dateCreated" datetime="2016-03-18T18:47:15+08:00" content="2016-03-18">
+              2016-03-18
             </time>
           </span>
 
@@ -235,8 +233,8 @@ hexo是使用Markdown编辑文章的。">
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
+                  <a href="/categories/数据结构与算法/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构与算法</span>
                   </a>
                 </span>
 
@@ -251,8 +249,8 @@ hexo是使用Markdown编辑文章的。">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/13/markdown-简明语法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/13/markdown-简明语法/" itemprop="commentsCount"></span>
+                <a href="/2016/03/18/判断回文的几种方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/18/判断回文的几种方法/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -271,63 +269,23 @@ hexo是使用Markdown编辑文章的。">
       
 
       
-        <span itemprop="articleBody"><h2 id="什么是Markdowwn"><a href="#什么是Markdowwn" class="headerlink" title="什么是Markdowwn"></a>什么是Markdowwn</h2><p>Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯和亚伦·斯沃茨。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML文档”。 ——维基百科</p>
-<p>hexo是使用Markdown编辑文章的。<br><a id="more"></a></p>
-<h2 id="基本符号"><a href="#基本符号" class="headerlink" title="基本符号"></a>基本符号</h2><ul>
-<li>*,-,+ 3个符号效果都一样，这3个符号被称为 Markdown符号</li>
-<li>空白行表示另起一个段落</li>
-<li>`是表示inline代码，tab是用来标记代码段，分别对应html的code，pre标签</li>
-</ul>
-<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><ul>
-<li>单一段落( <p>) 用一个空白行</p></li>
-<li>连续两个空格 会变成一个<br></li>
-<li>连续3个符号，然后是空行，表示 hr横线</li>
-</ul>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><ul>
-<li>生成h1–h6,在文字前面加上 1–6个# 来实现，一个#最大</li>
-<li>文字加粗是通过 文字左右各两个符号</li>
-</ul>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ul>
-<li>在第一行加上 “&gt;”和一个空格，表示代码引用，还可以嵌套</li>
-</ul>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>这个是markdown文件的主要表示方式，主题要点化</p>
-<ul>
-<li>使用*,+,-加上一个空格来表示</li>
-<li>可以支持嵌套</li>
-<li>有序列表用 数字+英文点+空格来表示</li>
-<li>列表内容很长，不需要手工输入换行符，css控制段落的宽度，会自动的缩放的</li>
-</ul>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><ul>
-<li>直接写 <a href="url" title="可选的title">锚文本</a></li>
-<li>引用先定义 [ref_name]:url，然后在需要写入url的地方，这样使[锚文本][ref_name]，通常的ref_name一般用数字表示，这样显得专业</li>
-<li>简写url：用尖括号包裹url这样生成的url锚文本就是url本身</li>
-</ul>
-<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><ul>
-<li>一行表示: <img src="url" alt="alt_text" title="可选的title"></li>
-<li>引用表示法: ![alt_text][id],预先定义 [id]:url “可选title”</li>
-<li>直接使用<img>标签，这样可以指定图片的大小尺寸</li>
-</ul>
-<h2 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h2><ul>
-<li>用\来转义，表示文本中的markdown符号</li>
-<li>可以在文本种直接使用html标签，但是要注意在使用的时候，前后加上空行</li>
-<li>文本前后各加一个符号，表示斜体</li>
-</ul>
-<h2 id="Markdown-编辑器"><a href="#Markdown-编辑器" class="headerlink" title="Markdown 编辑器"></a>Markdown 编辑器</h2><ul>
-<li>Windows 平台 <ul>
-<li><a href="http://markdownpad.com/" target="_blank" rel="external">Markdown</a></li>
-<li><a href="http://code52.org/DownmarkerWPF/" target="_blank" rel="external">MarkPad</a></li>
-</ul>
-</li>
-<li>Linux 平台<ul>
-<li><a href="http://code52.org/DownmarkerWPF/" target="_blank" rel="external">ReText</a></li>
-</ul>
-</li>
-<li>在线编辑器<ul>
-<li><a href="https://markable.in/" target="_blank" rel="external">Markable.in</a></li>
-<li><a href="http://dillinger.io/" target="_blank" rel="external">Dillinger</a></li>
-</ul>
-</li>
-</ul>
+        <span itemprop="articleBody"><p>回文是一种字符串或数，它正着读和反着读是一样的,例如12121、level.</p>
+<p>问题：Determine whether an integer is a palindrome.（判断一个正整数是否为回文数）</p>
+<a id="more"></a>
+<h3 id="解法1：转换成字符串"><a href="#解法1：转换成字符串" class="headerlink" title="解法1：转换成字符串"></a>解法1：转换成字符串</h3><p>判断一个整数是否为回文数，可以将整数转换成一个字符串，然后根据回文数的对称性来判断，判断字符串是否为回文字符串，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">bool isPalindrome(string &amp;str)  </span><br><span class="line">&#123;</span><br><span class="line">	int begin = 0, end = str.length()-1;  </span><br><span class="line">        while (begin &lt; end) &#123;  </span><br><span class="line">            if (str[begin] == str[end]) &#123;  </span><br><span class="line">                begin++;  </span><br><span class="line">                end--;  </span><br><span class="line">            &#125; else &#123;  </span><br><span class="line">                return false;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">    return true;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="解法2：数字翻转"><a href="#解法2：数字翻转" class="headerlink" title="解法2：数字翻转"></a>解法2：数字翻转</h3><p>将整数翻转后与原数比较，若相等，则是回文数，否则不是，翻转代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">int reverse(int num)   </span><br><span class="line">&#123;  </span><br><span class="line">  assert(num &gt;= 0);   </span><br><span class="line">  int rev = 0;  </span><br><span class="line">  while (num != 0) &#123;  </span><br><span class="line">    rev = rev * 10 + num % 10;  </span><br><span class="line">    num /= 10;  </span><br><span class="line">  &#125;  </span><br><span class="line">  return rev;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这种方法存在一个潜在的问题，即翻转后的整数有可能溢出。</p>
+<h3 id="解法3：数字位判断法"><a href="#解法3：数字位判断法" class="headerlink" title="解法3：数字位判断法"></a>解法3：数字位判断法</h3><p>我们知道对于任意n位的数字，取n=5，数字95349为例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">95349 % 10 =&gt; 9</span><br><span class="line">95349 / 10000 =&gt; 95349 / 10^4 =&gt; 9</span><br></pre></td></tr></table></figure>
+<p>可以看出我们可以通过模10来取其最低位，除10^(n-1)来取其最高位，将其最高位和最低位进行比较，便可以得出当前是否符合回文要求了。</p>
+<p>比较最高位和最低位后，将这两位去掉：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">95349 % 1000 =&gt; 95349 % 10^4 = 5349</span><br><span class="line">95349 / 10 = 9534</span><br></pre></td></tr></table></figure>
+<p>完整代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public class Solution &#123;</span><br><span class="line">    public boolean isPalindrome(int x) &#123;</span><br><span class="line">        int a = x, h = 1;</span><br><span class="line"></span><br><span class="line">        if (a &lt; 0) return false;</span><br><span class="line"></span><br><span class="line">        while (a / h &gt;= 10) &#123;</span><br><span class="line">            h = h * 10;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        while (a &gt; 0) &#123;</span><br><span class="line">            if (a / h != a % 10) return false;</span><br><span class="line">            a = a % h;</span><br><span class="line">            a = a / 10;</span><br><span class="line">            h = h / 100;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="解法4：递归"><a href="#解法4：递归" class="headerlink" title="解法4：递归"></a>解法4：递归</h3><p>考虑使用递归的两个条件： 第一：这个问题是否可以分解为形式相同但规模更小的问题？ 第二：如果存在这样一种分解，那么这种分解是否存在一种简单情境？<br>很明显此问题满足第一个条件，先判断给定整数首尾位是否相等，若相等，则判断去掉首尾位后是否是回文数，若不相等，则不是回文数。<br>第二点，是否存在一种简单情景，简单情境在使用递归的时候是必须的，否则你的递归程序可能会进入无止境的调用。很明显当数字为一位数时一定是回文数。<br>基于以上分析，可以用递归实现。与解法1类似，先将数字转换为字符串再对字符串进行判断，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int ispalindereme(char * str, int n)</span><br><span class="line">&#123;</span><br><span class="line">    if(n == 0 || n == 1)</span><br><span class="line">        return 1;</span><br><span class="line">    else&#123;</span><br><span class="line">        return ((str[0] == str[n-1]) ? ispalindereme(str+1, n-1) : 0);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </span>
       
     </div>
@@ -336,9 +294,7 @@ hexo是使用Markdown编辑文章的。">
       
         <div class="post-tags">
           
-            <a href="/tags/markdown/" rel="tag">#markdown</a>
-          
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/数据结构与算法/" rel="tag">#数据结构与算法</a>
           
         </div>
       
@@ -347,17 +303,13 @@ hexo是使用Markdown编辑文章的。">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/13/hello/" rel="next" title="hello">
-                <i class="fa fa-chevron-left"></i> hello
+              <a href="/2016/03/16/Android-技能点/" rel="next" title="Android 技能点">
+                <i class="fa fa-chevron-left"></i> Android 技能点
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/16/Android-技能点/" rel="prev" title="Android 技能点">
-                Android 技能点 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -382,8 +334,8 @@ hexo是使用Markdown编辑文章的。">
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2016/03/13/markdown-简明语法/"
-                   data-title="markdown 简明语法" data-url="http://YapingZhou.github.io/2016/03/13/markdown-简明语法/">
+              <div class="ds-thread" data-thread-key="2016/03/18/判断回文的几种方法/"
+                   data-title="判断回文的几种方法" data-url="http://YapingZhou.github.io/2016/03/18/判断回文的几种方法/">
               </div>
             
           </div>
@@ -488,7 +440,7 @@ hexo是使用Markdown编辑文章的。">
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Markdowwn"><span class="nav-number">1.</span> <span class="nav-text">什么是Markdowwn</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本符号"><span class="nav-number">2.</span> <span class="nav-text">基本符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#换行"><span class="nav-number">3.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">4.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-number">5.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">6.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接"><span class="nav-number">7.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入图片"><span class="nav-number">8.</span> <span class="nav-text">插入图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊符号"><span class="nav-number">9.</span> <span class="nav-text">特殊符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-编辑器"><span class="nav-number">10.</span> <span class="nav-text">Markdown 编辑器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#解法1：转换成字符串"><span class="nav-number">1.</span> <span class="nav-text">解法1：转换成字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解法2：数字翻转"><span class="nav-number">2.</span> <span class="nav-text">解法2：数字翻转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解法3：数字位判断法"><span class="nav-number">3.</span> <span class="nav-text">解法3：数字位判断法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解法4：递归"><span class="nav-number">4.</span> <span class="nav-text">解法4：递归</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
