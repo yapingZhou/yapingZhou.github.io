@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="SQL MySQL," />
+  <meta name="keywords" content="SQL,MySQL," />
 
 
 
@@ -51,7 +51,7 @@
 <meta property="og:url" content="http://YapingZhou.github.io/2016/04/10/SQL总结（下）/index.html">
 <meta property="og:site_name" content="亚平的小天地">
 <meta property="og:description" content="高级SQL特性 – 约束、索引和触发器">
-<meta property="og:updated_time" content="2016-04-10T13:36:19.366Z">
+<meta property="og:updated_time" content="2016-04-10T13:43:17.992Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL总结（下）">
 <meta name="twitter:description" content="高级SQL特性 – 约束、索引和触发器">
@@ -292,8 +292,8 @@
 <li>2、在ALTER TABLE语句中用CONSTRAINT语法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alter table sc</span><br><span class="line">add constraint</span><br><span class="line">foreign key(s_id) references students(s_id);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><strong>提示</strong> 外键有助防止意外删除</p>
-<p>除帮助保证引用完整性外，外键还有另一个重要作用。在定义外键后，DBMS不允许删除在另一个表中具有关联行的行。例如，不能删除关联课程的学生。删除该学生的唯一方法是首先删除相关的课程（这表示还要删除相关的课程项）。由于需要一系列的删除，因而利用外键可以防止意外删除数据。<br>有的DBMS支持称为级联删除（cascading delete）的特性。如果启用，该特性在从一个表中删除行时删除所有相关的数据。例如，如果启<br>用级联删除并且从Customers表中删除某个学生，则任何关联的课程单行也会被自动删除。</p>
+<p><strong>提示</strong>  外键有助防止意外删除</p>
+<p>除帮助保证引用完整性外，外键还有另一个重要作用。在定义外键后，DBMS不允许删除在另一个表中具有关联行的行。例如，不能删除关联课程的学生。删除该学生的唯一方法是首先删除相关的课程（这表示还要删除相关的课程项）。由于需要一系列的删除，因而利用外键可以防止意外删除数据。<br>有的DBMS支持称为级联删除（cascading delete）的特性。如果启用，该特性在从一个表中删除行时删除所有相关的数据。例如，如果启用级联删除并且从Customers表中删除某个学生，则任何关联的课程单行也会被自动删除。</p>
 <p><strong>唯一约束</strong><br>唯一约束用来保证一列（或一组列）中的数据是唯一的。它们类似于主键，但存在以下重要区别。</p>
 <ul>
 <li>表可包含多个唯一约束，但每个表只允许一个主键。</li>
@@ -334,7 +334,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/SQL-MySQL/" rel="tag">#SQL MySQL</a>
+            <a href="/tags/SQL/" rel="tag">#SQL</a>
+          
+            <a href="/tags/MySQL/" rel="tag">#MySQL</a>
           
         </div>
       
@@ -432,7 +434,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
