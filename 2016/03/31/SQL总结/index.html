@@ -51,7 +51,7 @@
 <meta property="og:url" content="http://YapingZhou.github.io/2016/03/31/SQL总结/index.html">
 <meta property="og:site_name" content="亚平的小天地">
 <meta property="og:description" content="基于MySQL的数据库常用操作">
-<meta property="og:updated_time" content="2016-04-10T00:55:44.850Z">
+<meta property="og:updated_time" content="2016-04-10T00:58:33.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL总结">
 <meta name="twitter:description" content="基于MySQL的数据库常用操作">
@@ -354,7 +354,7 @@
 <h4 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h4><p>alter table 语句用于创建后对表的修改，基础用法如下：</p>
 <p><strong>添加列</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 add 列名 列数据类型 [after 插入位置]</span><br></pre></td></tr></table></figure>
-<p>如：</p>
+<p>eg：</p>
 <ul>
 <li><p>在表的最后追加列address：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table students add address char(60);</span><br></pre></td></tr></table></figure>
@@ -364,7 +364,7 @@
 </li>
 </ul>
 <p><strong>注意:</strong>MySQL的列名有空格时，需要将列名用反引号`括起来<br><strong>修改列</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 change 列名称 列新名称 新数据类型；</span><br></pre></td></tr></table></figure></p>
-<p>如：</p>
+<p>eg：</p>
 <ul>
 <li><p>将表tel列名改为telphone:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table students change tel telphone char(13) default &quot;-&quot;;</span><br></pre></td></tr></table></figure>
@@ -374,25 +374,25 @@
 </li>
 </ul>
 <p><strong>删除列</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 drop 列名称；</span><br></pre></td></tr></table></figure></p>
-<p>如：</p>
+<p>eg：</p>
 <ul>
 <li>删除birthday列：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table students drop birthday;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><strong>重命名表</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 rename 新表名；</span><br></pre></td></tr></table></figure></p>
-<p>如：</p>
+<p>eg：</p>
 <ul>
 <li>重命名students表为workmates：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table students rename workmates;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><strong>删除整张表</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop table 表名；</span><br></pre></td></tr></table></figure></p>
-<p>如：</p>
+<p>eg：</p>
 <ul>
 <li>删除workmates表：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop table workmates;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><strong>删除整个数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop database 数据库名；</span><br></pre></td></tr></table></figure></p>
-<p>如：</p>
+<p>eg：</p>
 <ul>
 <li>删除smap_dp数据库：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop database samp_db;</span><br></pre></td></tr></table></figure>
 </li>
