@@ -51,7 +51,7 @@
 <meta property="og:url" content="http://YapingZhou.github.io/2016/04/10/SQL总结（下）/index.html">
 <meta property="og:site_name" content="亚平的小天地">
 <meta property="og:description" content="高级SQL特性 – 约束、索引和触发器">
-<meta property="og:updated_time" content="2016-04-10T13:34:38.490Z">
+<meta property="og:updated_time" content="2016-04-10T13:36:19.366Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL总结（下）">
 <meta name="twitter:description" content="高级SQL特性 – 约束、索引和触发器">
@@ -274,7 +274,7 @@
 <li>1、创建主键<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table students</span><br><span class="line">(</span><br><span class="line">	s_id int unsigned not null primary key,</span><br><span class="line">	s_name varchar(30) not null</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>给是s_id列添加关键字PRIMARY KEY，使其成为主键。</p>
+<p>给s_id列添加关键字PRIMARY KEY，使其成为主键。</p>
 <ul>
 <li>2、使用alter定义<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table students</span><br><span class="line">add constraint primary key(s_id);</span><br></pre></td></tr></table></figure>
 </li>
