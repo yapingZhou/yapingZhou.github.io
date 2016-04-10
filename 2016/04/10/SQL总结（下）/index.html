@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="Android," />
+  <meta name="keywords" content="SQL MySQL," />
 
 
 
@@ -45,16 +45,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="Android应该掌握的技能">
+<meta name="description" content="高级SQL特性–约束、索引和触发器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android 技能点">
-<meta property="og:url" content="http://YapingZhou.github.io/2016/03/16/Android-技能点/index.html">
+<meta property="og:title" content="SQL总结（下）">
+<meta property="og:url" content="http://YapingZhou.github.io/2016/04/10/SQL总结（下）/index.html">
 <meta property="og:site_name" content="亚平的小天地">
-<meta property="og:description" content="Android应该掌握的技能">
-<meta property="og:updated_time" content="2016-03-16T03:06:33.139Z">
+<meta property="og:description" content="高级SQL特性–约束、索引和触发器">
+<meta property="og:updated_time" content="2016-04-10T13:33:34.735Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android 技能点">
-<meta name="twitter:description" content="Android应该掌握的技能">
+<meta name="twitter:title" content="SQL总结（下）">
+<meta name="twitter:description" content="高级SQL特性–约束、索引和触发器">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -66,7 +66,7 @@
 
 
 
-  <title> Android 技能点 | 亚平的小天地 </title>
+  <title> SQL总结（下） | 亚平的小天地 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -211,7 +211,7 @@
             
             
               
-                Android 技能点
+                SQL总结（下）
               
             
           </h1>
@@ -220,8 +220,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-03-16T10:50:07+08:00" content="2016-03-16">
-              2016-03-16
+            <time itemprop="dateCreated" datetime="2016-04-10T19:48:27+08:00" content="2016-04-10">
+              2016-04-10
             </time>
           </span>
 
@@ -230,8 +230,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
                   </a>
                 </span>
 
@@ -246,8 +246,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/16/Android-技能点/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/Android-技能点/" itemprop="commentsCount"></span>
+                <a href="/2016/04/10/SQL总结（下）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/10/SQL总结（下）/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -266,54 +266,66 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="Android应该掌握的技能"><a href="#Android应该掌握的技能" class="headerlink" title="Android应该掌握的技能"></a>Android应该掌握的技能</h2><a id="more"></a>
+        <span itemprop="articleBody"><h2 id="高级SQL特性–约束、索引和触发器"><a href="#高级SQL特性–约束、索引和触发器" class="headerlink" title="高级SQL特性–约束、索引和触发器"></a>高级SQL特性–约束、索引和触发器</h2><a id="more"></a>
+<h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><p><strong>主键</strong></p>
+<p>主键是一种特殊的约束，用来保证一列（或者一组列）中的值是唯一的，而且永不改动。</p>
+<p>定义主键的方式有两种：</p>
 <ul>
-<li><p>良好JAVA基础,熟练掌握面向对象思想</p>
-</li>
-<li><p>熟练使用集合、IO流及多线程</p>
-</li>
-<li><p>熟练使用Android四大组件</p>
-</li>
-<li><p>熟练使用Handler，了解Handler机制</p>
-</li>
-<li><p>熟练掌握Android应用内的数据传递</p>
-</li>
-<li><p>熟练掌握Android数据存储（文件、网络、sharedpreference、SQLite、ContentProvicer）</p>
-</li>
-<li><p>熟练掌握Android平台下XML和JSON解析</p>
-</li>
-<li><p>熟练掌握Android应用UI设计、fragment，framLayout，Viewpage，ViewGroup等常见View的使用、自定义控件开发</p>
-</li>
-<li><p>熟练使用ListView、GridView，熟练掌握其优化方法</p>
-</li>
-<li><p>熟练处理Android中的OOM、ANR异常</p>
-</li>
-<li><p>熟悉图片的缓存技术、常用的优化方式，熟练使用Lrucache进行图片缓存</p>
-</li>
-<li><p>熟练掌握SlidingMenu、xUtils、ViewPagerIndicator、ImageLoader等开源框架</p>
-</li>
-<li><p>了解消息推送机制，了解第三方推送</p>
-</li>
-<li><p>熟练Socket编程，了解Tcp、Udp协议</p>
-</li>
-<li><p>Android 事件分发</p>
-</li>
-<li><p>熟练使用安卓中的多线程下载、断点下载</p>
-</li>
-<li><p>熟练volly，okhttp</p>
-</li>
-<li><p>熟悉JNI，了解NDK开发</p>
-</li>
-<li><p>即时通信</p>
-</li>
-<li><p>多媒体开发，视频，音乐播放</p>
-</li>
-<li><p>JVM运行机制</p>
-</li>
-<li><p>静默安装</p>
+<li>1、创建主键<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table students</span><br><span class="line">(</span><br><span class="line">	s_id int unsigned not null primary key,</span><br><span class="line">	s_name varchar(30) not null</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>###点亮技能树…</p>
+<p>给是s_id列添加关键字PRIMARY KEY，使其成为主键。</p>
+<ul>
+<li>2、使用alter定义<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table students</span><br><span class="line">add constraint primary key(s_id);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>定义s_id列为主键，但使用的是CONSTRAINT语法。此语法也可以用于CREATE TABLE和ALTER TABLE语句。</p>
+<p><strong>外键</strong></p>
+<p>外键是表中的一列，其值必须列在另一表的主键中。外键是保证引用完整性的极其重要部分。</p>
+<p>与主键类似，外键也有两种方式定义：</p>
+<ul>
+<li>1、创建外键<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create table sc(</span><br><span class="line">(</span><br><span class="line">	sc_id int unsigned not null auto_increment primary key,</span><br><span class="line">	s_id int unsigned not null references students(s_id),</span><br><span class="line">	c_id int unsgned not null references course(c_id),</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>其中的表定义使用了REFERENCES关键字，它表示s_id中的任何值都必须是students表的cust_id中的值，c_id中的任何值都必须是course表的c_id中的值。</p>
+<ul>
+<li>2、在ALTER TABLE语句中用CONSTRAINT语法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alter table sc</span><br><span class="line">add constraint</span><br><span class="line">foreign key(s_id) references students(s_id);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>提示</strong> 外键有助防止意外删除</p>
+<p>除帮助保证引用完整性外，外键还有另一个重要作用。在定义外键后，DBMS不允许删除在另一个表中具有关联行的行。例如，不能删除关联课程的学生。删除该学生的唯一方法是首先删除相关的课程（这表示还要删除相关的课程项）。由于需要一系列的删除，因而利用外键可以防止意外删除数据。<br>有的DBMS支持称为级联删除（cascading delete）的特性。如果启用，该特性在从一个表中删除行时删除所有相关的数据。例如，如果启<br>用级联删除并且从Customers表中删除某个学生，则任何关联的课程单行也会被自动删除。</p>
+<p><strong>唯一约束</strong><br>唯一约束用来保证一列（或一组列）中的数据是唯一的。它们类似于主键，但存在以下重要区别。</p>
+<ul>
+<li>表可包含多个唯一约束，但每个表只允许一个主键。</li>
+<li>唯一约束列可包含NULL值。</li>
+<li>唯一约束列可修改或更新。</li>
+<li>唯一约束列的值可重复使用。</li>
+<li>与主键不一样，唯一约束不能用来定义外键。</li>
+</ul>
+<p>唯一约束的语法类似于其他约束的语法。唯一约束既可以用UNIQUE关键字在表定义中定义，也可以用单独的CONSTRAINT定义。</p>
+<p><strong>检查约束</strong><br>检查约束用来保证一列（或一组列）中的数据满足一组指定的条件。检查约束的常见用途有以下几点。</p>
+<ul>
+<li>检查最小或最大值。例如，防止0个物品的订单（即使0是合法的数）。</li>
+<li>指定范围。例如，保证发货日期大于等于今天的日期，但不超过今天起一年后的日期。</li>
+<li>只允许特定的值。例如，在性别字段中只允许M或F。</li>
+</ul>
+<p>数据类型限制了列中可保存的数据的类型。检查约束在数据类型内又做了进一步的限制，这些限制极其重要，可以确保插入数据库的数据正是你想要的数据。不需要依赖于客户端应用程序或用户来保证正确获取它，DBMS本身将会拒绝任何无效的数据。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">create table sc(</span><br><span class="line">(</span><br><span class="line">	sc_id int unsigned not null auto_increment primary key,</span><br><span class="line">	s_id int unsigned not null references students(s_id),</span><br><span class="line">	c_id int unsgned not null references course(c_id),</span><br><span class="line">	grade int not null check(0 &lt;= grade &lt;= 100)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>给grade添加了约束，保证大于等于0小于等于100。</p>
+<h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><p>索引用来排序数据以加快搜索和排序操作的速度。</p>
+<p>索引用CREATE INDEX语句创建（不同DBMS创建索引的语句变化很大）,给course的课程名建立索引：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">create index course_name_index</span><br><span class="line">on course(c_name);</span><br></pre></td></tr></table></figure>
+<p>索引必须唯一命名。这里的索引名course_name_index在关键字CREATE INDEX之后定义。ON用来指定被索引的表，而索引中包含的列（此例中仅有一列）在表名后的圆括号中给出。</p>
+<h3 id="触发器"><a href="#触发器" class="headerlink" title="触发器"></a>触发器</h3><p>触发器是特殊的存储过程，它在特定的数据库活动发生时自动执行。触发器可以与特定表上的INSERT、UPDATE和DELETE操作（或组合）相关联。</p>
+<p>与存储过程不一样（存储过程只是简单的存储SQL语句），触发器与单个的表相关联。与students表上的INSERT操作相关联的触发器只在students表中插入行时执行。类似地，course表上的INSERT和UPDATE操作的触发器只在表上出现这些操作时执行。</p>
+<p>下面是触发器的一些常见用途:</p>
+<ul>
+<li>保证数据一致。例如，在INSERT或UPDATE操作中将所有州名转换为大写。</li>
+<li>基于某个表的变动在其他表上执行活动。例如，每当更新或删除一行时将审计跟踪记录写入某个日志表。</li>
+<li>进行额外的验证并根据需要回退数据。例如，保证某个顾客的可用资金不超限定，如果已经超出，则阻塞插入。</li>
+<li>计算计算列的值或更新时间戳。</li>
+</ul>
+<p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">create trigger triggerName</span><br><span class="line">after/before insert/update/delete on 表名</span><br><span class="line">for each row   #这句话在mysql是固定的</span><br><span class="line">begin</span><br><span class="line"></span><br><span class="line">sql语句;</span><br><span class="line"></span><br><span class="line">end;</span><br></pre></td></tr></table></figure></p>
 </span>
       
     </div>
@@ -322,7 +334,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android/" rel="tag">#Android</a>
+            <a href="/tags/SQL-MySQL/" rel="tag">#SQL MySQL</a>
           
         </div>
       
@@ -331,17 +343,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/13/markdown-简明语法/" rel="next" title="markdown 简明语法">
-                <i class="fa fa-chevron-left"></i> markdown 简明语法
+              <a href="/2016/04/10/SQL总结（中）/" rel="next" title="SQL总结（中）">
+                <i class="fa fa-chevron-left"></i> SQL总结（中）
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/18/判断回文的几种方法/" rel="prev" title="判断回文的几种方法">
-                判断回文的几种方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -366,8 +374,8 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2016/03/16/Android-技能点/"
-                   data-title="Android 技能点" data-url="http://YapingZhou.github.io/2016/03/16/Android-技能点/">
+              <div class="ds-thread" data-thread-key="2016/04/10/SQL总结（下）/"
+                   data-title="SQL总结（下）" data-url="http://YapingZhou.github.io/2016/04/10/SQL总结（下）/">
               </div>
             
           </div>
@@ -472,7 +480,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Android应该掌握的技能"><span class="nav-number">1.</span> <span class="nav-text">Android应该掌握的技能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#高级SQL特性–约束、索引和触发器"><span class="nav-number">1.</span> <span class="nav-text">高级SQL特性–约束、索引和触发器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#约束"><span class="nav-number">1.1.</span> <span class="nav-text">约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引"><span class="nav-number">1.2.</span> <span class="nav-text">索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#触发器"><span class="nav-number">1.3.</span> <span class="nav-text">触发器</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
